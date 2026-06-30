@@ -309,12 +309,12 @@ footer p{
 .video iframe,
 .sprint iframe,
 .prototipo iframe {
-    display: block;       /* Permite a centralização com margin auto */
-    margin: 0 auto;       /* Centraliza o quadrado na tela */
-    width: 100%;          /* Garante que encolha em telas menores (celular) */
-    max-width: 850px;     /* DEFINE A LARGURA MÁXIMA (Ajuste esse valor se quiser ainda menor!) */
-    border-radius: 20px;  /* Deixa as bordas arredondadas e bonitas */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil no fundo */
+    display: block;       /* OBRIGATÓRIO: Força o navegador a respeitar a centralização */
+    margin: 40px auto;    /* Centraliza na horizontal e dá um espaço de 40px em cima/baixo */
+    width: 100%;          
+    max-width: 750px;     /* Mantém ele mais compacto como você queria */
+    border-radius: 20px;  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
 }
 
 /* Ajustes específicos de altura para cada um ficar proporcional */
